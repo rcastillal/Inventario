@@ -1,6 +1,8 @@
 import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/platform-browser';
 
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -37,6 +39,7 @@ export class SettingsService {
     }
   }
 
+
   aplicarTema( tema: string ) {
 
     let url = `assets/css/colors/${tema}.css`;
@@ -53,3 +56,5 @@ interface Ajustes {
   temaUrl: string;
   tema: string;
 }
+
+
